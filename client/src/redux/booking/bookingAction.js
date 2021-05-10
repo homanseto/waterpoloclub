@@ -47,7 +47,6 @@ export const deleteBooking = (bookingId) => {
       dispatch(fetchBookingRequest());
       await axios.delete(`/bookings/${bookingId}`);
       const newData = await axios.get('/bookings/bookedCourses');
-
       dispatch(fetchBookingSuccess(newData));
     } catch (err) {
       dispatch(fetchBookingFailure(err));
