@@ -37,7 +37,7 @@ export const fetchUser = (email, password) => {
   return async (dispatch) => {
     try {
       dispatch(fetchUserRequest());
-      const data = await axios.post('/users/login', {
+      const data = await axios.post('/api/users/login', {
         email,
         password,
       });
@@ -59,7 +59,7 @@ export const signUpUser = (username, email, password, confirmPassword) => {
     try {
       console.log(username);
       dispatch(fetchUserRequest());
-      const data = await axios.post('/users/signup', {
+      const data = await axios.post('/api/users/signup', {
         name: username,
         email: email,
         password: password,
@@ -81,7 +81,7 @@ export const signUpUser = (username, email, password, confirmPassword) => {
 export const logoutUser = () => {
   return async (dispatch) => {
     try {
-      const data = await axios.get('/users/logout');
+      const data = await axios.get('/api/users/logout');
       localStorage.removeItem('email');
       localStorage.removeItem('username');
       localStorage.removeItem('role');
@@ -98,7 +98,7 @@ export const updateMe = (username, email) => {
   return async (dispatch) => {
     try {
       dispatch(fetchUserRequest());
-      const data = await axios.patch('/users/updateMe', {
+      const data = await axios.patch('/api/users/updateMe', {
         name: username,
         email: email,
       });
@@ -115,7 +115,7 @@ export const updatePassword = (passwordCurrent, password, passwordConfirm) => {
   return async (dispatch) => {
     try {
       dispatch(fetchUserRequest());
-      const data = await axios.patch('/users/updateMyPassword', {
+      const data = await axios.patch('/api/users/updateMyPassword', {
         passwordCurrent,
         password,
         passwordConfirm,

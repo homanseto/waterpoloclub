@@ -69,10 +69,10 @@ app.use((req, res, next) => {
 });
 
 //3) Route
-app.use('/courses', courseRouter);
-app.use('/events', eventRouter);
-app.use('/users', userRouter);
-app.use('/bookings', bookingRouter);
+app.use('/api/courses', courseRouter);
+app.use('/api/events', eventRouter);
+app.use('/api/users', userRouter);
+app.use('/api/bookings', bookingRouter);
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));

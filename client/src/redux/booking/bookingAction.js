@@ -30,7 +30,7 @@ export const makeBooking = (bookmarked) => {
   return async (dispatch) => {
     try {
       dispatch(fetchBookingRequest());
-      const data = await axios.post('/bookings', {
+      const data = await axios.post('/api/bookings', {
         courseId: bookmarked,
       });
       dispatch(fetchBookingSuccess(data));
@@ -45,11 +45,11 @@ export const deleteBooking = (bookingId) => {
     try {
       console.log(bookingId);
       dispatch(fetchBookingRequest());
-      await axios.delete(`/bookings/${bookingId}`);
-      const newData = await axios.get('/bookings/bookedCourses');
+      await axios.delete(`/api/bookings/${bookingId}`);
+      const newData = await axios.get('/api/bookings/bookedCourses');
       dispatch(fetchBookingSuccess(newData));
     } catch (err) {
-      dispatch(fetchBookingFailure(err));
+      dispatch(fetchBookingFailure(err.response.data.message));
     }
   };
 };
@@ -58,10 +58,10 @@ export const getBookedCourses = () => {
   return async (dispatch) => {
     try {
       dispatch(fetchBookingRequest());
-      const data = await axios.get('/bookings/bookedCourses');
+      const data = await axios.get('/api/bookings/bookedCourses');
       dispatch(fetchBookingSuccess(data));
     } catch (err) {
-      dispatch(fetchBookingFailure(err));
+      dispatch(fetchBookingFailure(err.response.data.message));
     }
   };
 };
@@ -70,10 +70,10 @@ export const paidBookedCourse = () => {
   return async (dispatch) => {
     try {
       dispatch(fetchBookingRequest());
-      const data = await axios.patch('/bookings/paid');
+      const data = await axios.patch('/api/bookings/paid');
       dispatch(fetchBookingSuccess(data));
     } catch (err) {
-      dispatch(fetchBookingFailure(err));
+      dispatch(fetchBookingFailure(err.response.data.message));
     }
   };
 };

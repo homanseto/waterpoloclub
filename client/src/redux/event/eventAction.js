@@ -30,7 +30,7 @@ export const fetchEvents = () => {
   return async (dispatch) => {
     try {
       dispatch(fetchEventRequest());
-      const data = await axios.get('/events');
+      const data = await axios.get('/api/events');
       const res = await data.data.data;
       dispatch(fetchEventSuccess(res));
     } catch (err) {
@@ -43,8 +43,8 @@ export const deleteEvent = (id) => {
   return async (dispatch) => {
     try {
       dispatch(fetchEventRequest());
-      await axios.delete(`/events/${id}`);
-      const newCoursesList = await axios.get('/events');
+      await axios.delete(`/api/events/${id}`);
+      const newCoursesList = await axios.get('/api/events');
       const res = await newCoursesList.data.data;
       dispatch(fetchEventSuccess(res));
     } catch (err) {
@@ -57,8 +57,8 @@ export const createEvent = (fd) => {
   return async (dispatch) => {
     try {
       dispatch(fetchEventRequest());
-      await axios.post('/events', fd);
-      const data = await axios.get('/events');
+      await axios.post('/api/events', fd);
+      const data = await axios.get('/api/events');
       const res = await data.data.data;
       console.log(res);
       dispatch(fetchEventSuccess(res));

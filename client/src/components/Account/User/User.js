@@ -87,7 +87,7 @@ const User = (props) => {
   const handleCheckOut = async (e) => {
     e.preventDefault();
     const stripe = await stripePromise;
-    const response = await axios.post('/bookings/checkout-session');
+    const response = await axios.post('/api/bookings/checkout-session');
     const session = await response.data.session;
     await dispatch(paidBookedCourse());
     await stripe.redirectToCheckout({

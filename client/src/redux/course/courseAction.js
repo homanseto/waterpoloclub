@@ -31,12 +31,12 @@ export const fetchAllCourses = () => {
   return async (dispatch) => {
     try {
       dispatch(fetchCourseRequest());
-      const data = await axios.get('/courses');
+      const data = await axios.get('/api/courses');
       const res = await data.data.data;
 
       dispatch(fetchCourseSuccess(res));
     } catch (err) {
-      dispatch(fetchCourseFailure(err));
+      dispatch(fetchCourseFailure(err.response.data.message));
     }
   };
 };
@@ -46,13 +46,13 @@ export const fetchSortedCourse = (type, level, location, week) => {
     try {
       dispatch(fetchCourseRequest());
       const data = await axios.get(
-        `/courses?${type}${level}${location}${week}`
+        `/api/courses?${type}${level}${location}${week}`
       );
       console.log(data);
       const res = await data.data.data;
       dispatch(fetchCourseSuccess(res));
     } catch (err) {
-      dispatch(fetchCourseFailure(err));
+      dispatch(fetchCourseFailure(err.response.data.message));
     }
   };
 };
@@ -61,12 +61,12 @@ export const deleteCourse = (id) => {
   return async (dispatch) => {
     try {
       dispatch(fetchCourseRequest());
-      await axios.delete(`/courses/${id}`);
-      const newCoursesList = await axios.get('/courses');
+      await axios.delete(`/api/courses/${id}`);
+      const newCoursesList = await axios.get('/api/courses');
       const res = await newCoursesList.data.data;
       dispatch(fetchCourseSuccess(res));
     } catch (err) {
-      dispatch(fetchCourseFailure(err));
+      dispatch(fetchCourseFailure(err.response.data.message));
     }
   };
 };
@@ -82,7 +82,7 @@ export const createCourse = (type, level, location, week, time, price) => {
     console.log(type);
     try {
       dispatch(fetchCourseRequest());
-      const data = await axios.post('/courses', {
+      const data = await axios.post('/api/courses', {
         type,
         level,
         location,
@@ -91,7 +91,7 @@ export const createCourse = (type, level, location, week, time, price) => {
         price,
       });
     } catch (err) {
-      dispatch(fetchCourseFailure(err.message));
+      dispatch(fetchCourseFailure(err.response.data.message));
     }
   };
 };
