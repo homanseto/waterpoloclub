@@ -74,6 +74,10 @@ app.use('/api/events', eventRouter);
 app.use('/api/users', userRouter);
 app.use('/api/bookings', bookingRouter);
 
+app.all('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+});
+
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
 });
