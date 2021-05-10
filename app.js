@@ -39,7 +39,7 @@ const limiter = rateLimit({
   windowMs: 60 * 60 * 1000,
   message: 'too many requests from this IP, please try again in an hour',
 });
-app.use('/', limiter);
+app.use('/api', limiter);
 
 // body parser, reading data from body into req.body
 app.use(express.json({ limit: '10kb' }));
@@ -68,11 +68,17 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(express.static(path.resolve('waterpolo_app', '../client/build')));
+
 //3) Route
 app.use('/api/courses', courseRouter);
 app.use('/api/events', eventRouter);
 app.use('/api/users', userRouter);
 app.use('/api/bookings', bookingRouter);
+
+app.all('*', (req, res) => {
+  res.sendFile(path.resolve('waterpolo_app', '../client/build', 'index.html'));
+});
 
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
