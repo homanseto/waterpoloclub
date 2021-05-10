@@ -1,0 +1,21 @@
+.event-card-block {
+  margin: 150px 150px 100px;
+}
+.event-card {
+  text-align: center;
+  width: 25rem;
+  padding: 5px;
+  color: #252525;
+}
+.event-image {
+  padding-top: 10px;
+}
+
+.event-title,
+.event-text {
+  text-align: left;
+}
+
+.event-date {
+  text-align: right;
+}

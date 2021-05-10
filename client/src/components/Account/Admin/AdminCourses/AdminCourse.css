@@ -1,0 +1,17 @@
+.adminCourse {
+  margin-top: 80px;
+  width: 1000px;
+}
+
+.course-input {
+  width: 150px;
+}
+
+.admin-course-btn {
+  width: 300px;
+  border-radius: 0%;
+  background-color: #252525;
+  font-weight: bold;
+  color: aliceblue;
+  margin-bottom: 20px;
+}

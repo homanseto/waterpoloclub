@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.admin-navbar {
+  height: 80px;
+  width: 125px;
+  margin-top: 80px;
+}
+.menu-bars {
+  margin-left: 1rem;
+  font-size: 2rem;
+  background: none;
+}
+
+.nav-admin-menu {
+  margin-top: 150px;
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  transition: 850ms;
+}
+.nav-admin-menu a {
+  color: hsl(0, 0%, 15%);
+}
+
+.nav-admin-menu.active {
+  transition: 350ms;
+  margin-left: -150px;
+}
+
+.nav-menu-items {
+  font-size: 1.5rem;
+}
+
+.nav-menu-items li {
+  list-style: none;
+  padding-bottom: 10px;
+}

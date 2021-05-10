@@ -1,0 +1,38 @@
+/* .login-heading {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  border-bottom: 3px solid hsl(0, 0%, 15%);
+  width: 390px;
+} */
+
+.error-message {
+  margin-top: 80px;
+}
+
+.box {
+  width: 500px;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transition: 0.25s;
+  margin-bottom: 100px;
+}
+.login-btn {
+  width: 420px;
+  border-radius: 0%;
+  background-color: #252525;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.log-page-label {
+  text-align: left;
+}
+
+.form-control {
+  border-radius: 0%;
+}

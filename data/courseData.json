@@ -1,0 +1,115 @@
+[
+  {
+    "type": "children",
+    "level": "intermediate",
+    "location": "mei_foo",
+    "week": "wednesday",
+    "time": "09:00",
+    "price": 500,
+    "maxGroupSize": 5,
+    "startDates": [
+      "2021-04-25,10:30:00",
+      "2021-07-20,10:30:00",
+      "2021-10-05,10:30:00"
+    ]
+  },
+  {
+    "type": "adult",
+    "level": "intermediate",
+    "location": "sham_shui_po",
+    "week": "tuesday",
+    "time": "13:00",
+    "price": 400,
+    "maxGroupSize": 6,
+    "startDates": [
+      "2021-04-25,11:20:00",
+      "2021-07-20,11:00:00",
+      "2021-10-05,11:00:00"
+    ]
+  },
+  {
+    "type": "adult",
+    "level": "beginner",
+    "location": "kowloon_park",
+    "week": "friday",
+    "time": "15:00",
+    "price": 300,
+    "maxGroupSize": 5,
+    "startDates": [
+      "2022-01-05,:10:00",
+      "2022-02-12,10:00:00",
+      "2023-01-06,10:00:00"
+    ]
+  },
+  {
+    "type": "children",
+    "level": "advanced",
+    "location": "mei_foo",
+    "week": "monday",
+    "time": "10:00",
+    "price": 300,
+    "coursePrice": 500,
+    "maxGroupSize": 5,
+    "startDates": [
+      "2021-06-19,10:00:00",
+      "2021-07-20,10:00:00",
+      "2021-08-18,10:00:00"
+    ]
+  },
+  {
+    "type": "adult",
+    "level": "beginner",
+    "location": "tai_wo_hau",
+    "week": "sunday",
+    "time": "18:00",
+    "price": 500,
+    "maxGroupSize": 5,
+    "startDates": [
+      "2021-03-11,09:00:00",
+      "2021-05-02,10:00:00",
+      "2021-06-09,10:00:00"
+    ]
+  },
+  {
+    "type": "training",
+    "level": "beginner",
+    "location": "kowloon_park",
+    "week": "friday",
+    "time": "19:00",
+    "price": 500,
+    "maxGroupSize": 5,
+    "startDates": [
+      "2021-03-11,15:00:00",
+      "2021-05-02,10:00:00",
+      "2021-06-09,10:00:00"
+    ]
+  },
+  {
+    "type": "children",
+    "level": "intermediate",
+    "location": "tai_wo_hau",
+    "week": "saturday",
+    "time": "11:00",
+    "price": 600,
+    "maxGroupSize": 5,
+    "startDates": [
+      "2021-03-11,17:00:00",
+      "2021-05-02,17:00:00",
+      "2021-06-09,17:00:00"
+    ]
+  },
+  {
+    "type": "children",
+    "level": "beginner",
+    "location": "tai_wo_hau",
+    "week": "saturday",
+    "time": "11:00",
+    "price": 500,
+    "maxGroupSize": 5,
+    "startDates": [
+      "2021-03-11,17:00:00",
+      "2021-05-02,17:00:00",
+      "2021-06-09,17:00:00"
+    ]
+  }
+]

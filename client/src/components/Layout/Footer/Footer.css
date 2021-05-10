@@ -1,0 +1,17 @@
+#footer {
+  background-color: #252525;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  height: 5rem;
+}
+
+.copyright {
+  color: white;
+}
+
+.home {
+  color: aliceblue;
+  margin: 20px;
+}

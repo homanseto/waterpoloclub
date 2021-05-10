@@ -1,0 +1,32 @@
+.into-row {
+  margin: 10%;
+}
+.group-image {
+  width: 85%;
+}
+.into-contain {
+  width: 80%;
+  text-align: left;
+}
+
+@media (max-width: 991px) {
+  .into-contain {
+    text-align: center;
+    padding-bottom: 5%;
+    margin: auto;
+  }
+  .into-text {
+    font-size: 1.2rem;
+  }
+  .group-image {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .into-row {
+    padding: 5% 15%;
+    margin: 0%;
+  }
+}

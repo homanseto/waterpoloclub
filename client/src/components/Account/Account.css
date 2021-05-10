@@ -1,0 +1,17 @@
+.account {
+  width: 500px;
+  margin: auto;
+  padding: 40px;
+  padding-bottom: 10px;
+  transition: 0.25s;
+  margin-top: 100px;
+}
+
+.change-btn {
+  width: 420px;
+  border-radius: 0%;
+  background-color: #252525;
+  font-weight: bold;
+  color: aliceblue;
+  margin-bottom: 20px;
+}

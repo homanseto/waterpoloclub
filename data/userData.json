@@ -1,0 +1,90 @@
+[
+  {
+    "name": "eric1",
+    "email": "eric1@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "eric2",
+    "email": "eric2@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "eric3",
+    "email": "eric3@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "eric4",
+    "email": "eric4@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "eric5",
+    "email": "eric5@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "eric6",
+    "email": "eric6@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "eric7",
+    "email": "eric7@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "eric8",
+    "email": "eric8@gmail.com",
+    "role": "user",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "coach1",
+    "email": "coach1@gmail.com",
+    "role": "coach",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "coach2",
+    "email": "coach2@gmail.com",
+    "role": "coach",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  },
+  {
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "role": "admin",
+    "active": true,
+    "password": "12345678",
+    "passwordConfirm": "12345678"
+  }
+]

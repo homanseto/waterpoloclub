@@ -1,0 +1,30 @@
+news-heading {
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-bottom: 5px solid #252525;
+}
+
+.news-list-row {
+  width: 40%;
+  margin: auto;
+  padding: 20px 0;
+  border-top: 2px solid #252525;
+}
+
+.news-list-link {
+  color: #252525;
+}
+
+.news-btn {
+  border-bottom: 1px solid #252525;
+  margin-bottom: 100px;
+  border-radius: 0%;
+}
+
+.news-btn:hover {
+  opacity: 0.7;
+}

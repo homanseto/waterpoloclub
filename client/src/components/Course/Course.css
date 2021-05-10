@@ -1,0 +1,81 @@
+.course-page {
+  align-items: stretch;
+}
+
+.course-heading {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+  border-bottom: 3px solid hsl(0, 0%, 15%);
+  width: 390px;
+}
+
+.course-table {
+  background-color: #252525;
+  height: 40%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.course-title-row {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.course-title {
+  text-align: left;
+  padding: 10px 0px 10px 30px;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.dropdown-btn {
+  width: 80%;
+  background-color: aliceblue;
+  font-weight: bold;
+  margin-top: 2%;
+  text-align: left;
+}
+
+.caretDownIcon {
+  position: relative;
+  float: right;
+  right: 0;
+  top: 5px;
+}
+
+.dropdown-list {
+  width: 80%;
+  background-color: aliceblue;
+}
+
+.search-row {
+  padding: 20px 30px 20px 30px;
+}
+
+.hints {
+  color: aliceblue;
+  text-align: left;
+}
+
+.search-btn-col {
+  text-align: right;
+  /* position: relative;
+  right: 20px;
+  bottom: 10px; */
+}
+
+.search-btn {
+  width: 30%;
+  background-color: aliceblue;
+}
+.display-table {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+}

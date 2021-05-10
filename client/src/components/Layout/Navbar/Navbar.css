@@ -1,0 +1,25 @@
+.water-polo-navbar {
+  padding: 0;
+  height: 70px;
+  background-color: hsl(0, 0%, 15%);
+  color: #f8f1f1;
+  top: 0;
+}
+
+.navbar-waterpolo-click {
+  background-color: hsl(0, 0%, 15%);
+}
+
+.navbar-waterpolo-title {
+  font-size: 2rem;
+}
+
+.nav-waterpolo-item {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 1000px) {
+  .water-polo-navbar {
+    padding: 0% 15%;
+  }
+}
