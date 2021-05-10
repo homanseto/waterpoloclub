@@ -68,6 +68,8 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use(express.static(path.resolve(__dirname, '../client/build')));
+
 //3) Route
 app.use('/api/courses', courseRouter);
 app.use('/api/events', eventRouter);

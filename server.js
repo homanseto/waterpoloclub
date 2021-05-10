@@ -27,9 +27,9 @@ mongoose
     console.log('DB connection successful');
   });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.resolve(__dirname, '../client/build')));
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static(path.resolve(__dirname, '../client/build')));
+// }
 
 const port = process.env.PORT || 8080;
 const server = app.listen(port, () => {
