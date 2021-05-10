@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "cd client && npm install && npm run build",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "cd client && npm install && npm run build"
   },
   "author": "seto",
   "license": "ISC",
